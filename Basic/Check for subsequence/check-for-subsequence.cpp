@@ -4,7 +4,7 @@ using namespace std;
 
 // } Driver Code Ends
 
-class Solution{
+class Solution{ 
     public:
     bool isSubSequence(string s, string t) 
     {
