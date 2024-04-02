@@ -99,40 +99,25 @@ struct Node {
 class Solution
 {
     public:
-    pair<int,int> solve(Node*root,int &ans)
+    void solve(Node *root,vector<int>&io)
     {
-        if(!root)
-        {
-            pair<int,int>p={INT_MIN,INT_MAX};
-            return p;
-        }
+        if(!root) return;
         
-        pair<int,int>lele=solve(root->left,ans);
-        pair<int,int>rele=solve(root->right,ans);
-        
-        int mini=min(lele.second,root->data);
-        int maxi=max(root->data,rele.first);
-        
-        if(lele.first!=INT_MIN)
-        ans=min(ans,abs(root->data-lele.first));
-        if(lele.second!=INT_MAX)
-        ans=min(ans,abs(root->data-lele.second));
-        if(rele.first!=INT_MIN);
-        ans=min(ans,abs(root->data-rele.first));
-        if(rele.second!=INT_MAX)
-        ans=min(ans,abs(root->data-rele.second));
-        if(root->left)
-        ans=min(ans,abs(root->data-root->left->data));
-        if(root->right)
-        ans=min(ans,abs(root->data-root->right->data));
-        
-        return {maxi,mini};
+        solve(root->left,io);
+        io.push_back(root->data);
+        solve(root->right,io);
     }
     int absolute_diff(Node *root)
     {
         //Your code here
         int ans=INT_MAX;
-        solve(root,ans);
+        vector<int>io;
+        solve(root,io);
+        
+        for(int i=1;i<io.size();i++)
+        {
+            ans=min(ans,abs(io[i-1]-io[i]));
+        }
         return ans;
     }
 };
