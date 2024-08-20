@@ -8,4 +8,4 @@ LinkedList2: 99-&gt;59-&gt;42-&gt;20
 LinkedList2: 1-&gt;2-&gt;3-&gt;4-&gt;5
 <strong>Output: </strong>true<br><strong>Explanation: <br></strong></span><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700585/Web/Other/blobid2_1719550498.png" width="400" height="140"> <br><span style="font-size: 14pt;">As shown in figure both are identical.</span></pre>
 <p><span style="font-size: 18px;"><strong>Expected Time Complexity</strong>: O(n)<br><strong>Expected Auxilliary Space</strong>: O(1)</span></p>
-<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= length of lists &lt;= 10<sup>3</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Linked List</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Algorithms</code>&nbsp;
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= length of lists &lt;= 10<sup>3</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Linked List</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Algorithms</code>&nbsp; 
