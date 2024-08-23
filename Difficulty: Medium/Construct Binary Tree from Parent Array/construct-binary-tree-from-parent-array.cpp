@@ -25,7 +25,6 @@ void printLevelOrder(struct Node* root) {
     queue<Node*> q;
 
     q.push(root);
-
     Node* next_row = NULL;
 
     while (!q.empty()) {
