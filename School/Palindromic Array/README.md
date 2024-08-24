@@ -7,7 +7,7 @@
 111 222 333 444 555</span>
 
 <span style="font-size:18px"><strong>Output:</strong></span>
-<span style="font-size:18px">1</span>
+<span style="font-size:18px">1</span> 
 
 <span style="font-size:18px"><strong>Explanation:</strong></span>
 <span style="font-size:18px">A[0] = 111 //which is a palindrome number.
