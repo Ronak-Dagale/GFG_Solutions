@@ -3,7 +3,7 @@
 <li><span style="font-size: 18px;">Insert a character at any position of the string.</span></li>
 <li><span style="font-size: 18px;">Remove any character from the string.</span></li>
 <li><span style="font-size: 18px;">Replace any character from the string with any other character.</span></li>
-</ol>
+</ol>  
 <p><span style="font-size: 18px;"><strong>Examples:<br></strong></span></p>
 <pre><span style="font-size: 18px;"><strong>Input: </strong>str1 = "geek", srt2 = "gesek"
 <strong>Output:</strong>&nbsp;1
