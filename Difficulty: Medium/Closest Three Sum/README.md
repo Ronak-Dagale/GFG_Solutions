@@ -4,7 +4,7 @@
 <pre><span style="font-size: 18px;"><strong>Input: </strong>arr[] = [-7, 9, 8, 3, 1, 1], target = 2
 <strong>Output: </strong>2<strong>
 Explanation: </strong>There is only one triplet present in the array where elements are -7,8,1 whose sum is 2.</span>
-</pre>
+</pre> 
 <pre><span style="font-size: 18px;"><strong>Input: </strong>arr[] = [5, 2, 7, 5], target = 13<br><strong>Output: </strong>14<strong>
 Explanation: </strong>There is one triplet with sum 12 and other with sum 14 in the array. Triplet elements are 5, 2, 5 and 2, 7, 5 respectively. Since abs(13-12) ==abs(13-14) maximum triplet sum will be preferred i.e 14.</span></pre>
 <p><span style="font-size: 18px;"><strong>Expected Time Complexity:&nbsp;</strong>O(n<sup>2</sup>)<br><strong>Expected Auxiliary Space:&nbsp;</strong>O(1)</span></p>
