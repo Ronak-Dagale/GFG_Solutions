@@ -1,5 +1,5 @@
 <h2><a href="https://practice.geeksforgeeks.org/problems/palindromic-array-1587115620/1?page=1&sprint=94ade6723438d94ecf0c00c3937dad55&sortBy=submissions">Palindromic Array</a></h2><h3>Difficulty Level : School</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given </span><span style="font-size:18px">a Integer</span><span style="font-size:18px"> array A[] of n elements. Your task is to complete the function </span><strong><span style="font-size:18px">PalinArray</span></strong><span style="font-size:20px">.</span><span style="font-size:18px"> Which will return 1 if all the elements of the Array are palindrome otherwise it will return&nbsp;0.</span></p>
-
+                                         
 <p><strong><span style="font-size:18px">Example 1:</span></strong></p>
 
 <pre><span style="font-size:18px"><strong>Input:</strong></span><span style="font-size:18px">
