@@ -3,7 +3,7 @@
 <p><span style="font-size: 12pt;"><strong>Examples :</strong></span></p>
 <pre><span style="font-size: 12pt;"><strong>Input: </strong>LinkedList: 4-&gt;5-&gt;6
 <strong>Output: </strong>457<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700053/Web/Other/blobid0_1722278845.png" width="400" height="225"><br><strong>Explanation:</strong> 4-&gt;5-&gt;6 represents 456 and when 1 is added it becomes 457. 
-</span></pre>
+</span></pre>  
 <pre><span style="font-size: 12pt;"><strong>Input: </strong>LinkedList: 1-&gt;2-&gt;3
 <strong>Output: </strong>124<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700053/Web/Other/blobid1_1722278908.png" width="400" height="225"> <br><strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Explanation:</strong><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  1-&gt;2-&gt;3 represents 123 and when 1 is added it becomes 124. </span></span></pre>
 <p><span style="font-size: 12pt;"><strong>Expected Time Complexity:&nbsp;</strong>O(n)<br><strong>Expected Auxiliary Space:&nbsp;</strong>O(1)</span></p>
