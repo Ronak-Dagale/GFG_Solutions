@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
+ 
 // } Driver Code Ends
 // Function to find square root
 // x: element to find square root
