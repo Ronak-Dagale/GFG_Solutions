@@ -1,39 +1,24 @@
 class Solution {
   public:
-  #define ll long long int
-    vector<int> nextLargerElement(vector<int> &arr) {
+    vector<int> nextGreater(vector<int> &arr) {
         // code here
-       stack<int> st;
-        int n = arr.size();
-        vector<int> ans;
-        for(int i=0;i<n;i++)
-        {
-            arr.push_back(arr[i]);
-        }
+         int n = arr.size();
+        vector<int> ans(n, -1);
+        stack<int> st;
         
-        for(int i=2*n-1;i>=0;i--)
-        {
-            while(!st.empty() && arr[i%n] >= st.top())
-            {
+        for (int i = 2*n - 1; i >= 0; i--) {
+            int ele = arr[i % n];
+            
+            while (!st.empty() && st.top() <= ele) {
                 st.pop();
             }
             
-            if(i<n)
-            {
-                if(!st.empty())
-                {
-                    ans.push_back(st.top());
-                }
-                else
-                {
-                    ans.push_back(-1);
-                }
+            if (i < n) {
+                ans[i] = st.empty() ? -1 : st.top();
             }
             
-            st.push(arr[i%n]);
+            st.push(ele);
         }
-        
-        reverse(ans.begin(), ans.end());
         
         return ans;
     }
