@@ -1,24 +1,27 @@
 class Solution {
   public:
-  int solve(string& s,int k) {
-        int count = 0;
-        int start = 0;
-        int distinct = 0;
-        vector<int>freq(26,0);
-        int n = s.size();
-        for(int i = 0;i<n;i++){
-            freq[s[i]-'a']++;
-            if(freq[s[i]-'a'] == 1)distinct++;
-            while(distinct >k){
-                freq[s[start]-'a']--;
-                if(freq[s[start]-'a'] == 0)distinct--;
-                start++;
-            }
-            count += i-start+1;
+int atMostK(string &s, int k) {
+    if (k < 0) return 0;
+    vector<int> fre(26, 0);
+    int j = 0, distinct = 0, ans = 0;
+
+    for (int i = 0; i < s.size(); i++) {
+        if (fre[s[i]-'a']++ == 0)
+            distinct++;
+
+        while (distinct > k) {
+            if (--fre[s[j]-'a'] == 0)
+                distinct--;
+            j++;
         }
-        return count;
+
+        ans += (i - j + 1);
     }
-    int countSubstr(string& s, int k) {
-        return solve(s,k)-solve(s,k-1);
-    }
+    return ans;
+}
+
+int countSubstr(string &s, int k) {
+    return atMostK(s, k) - atMostK(s, k - 1);
+}
+
 };
