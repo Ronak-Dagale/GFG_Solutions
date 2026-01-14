@@ -1,0 +1,33 @@
+class Solution {
+  public:
+    int minCandy(vector<int> &ratings) {
+        // code here
+        int N=ratings.size();
+         vector<int> dp(N , 1);
+        dp[0] = 1;
+        
+        for(int i = 1 ; i < N; i++){
+            if(ratings[i] > ratings[i-1]){
+                dp[i] = dp[i-1]+1;
+            }
+        }
+        vector<int> dp1(N , 1);
+        
+         for (int i =N - 2; i >= 0; --i) {
+         if(ratings[i] > ratings[i+1]){
+             dp1[i] = dp1[i+1] + 1;
+             
+         }
+    }
+        int sum =0;
+        
+        
+        for(int i = 0 ; i < N ; i++){
+            sum += max(dp1[i] , dp[i]);
+            
+        }
+        
+ 
+        return sum ;
+    }
+};
