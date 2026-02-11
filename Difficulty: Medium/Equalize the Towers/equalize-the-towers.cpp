@@ -1,33 +1,31 @@
 class Solution {
   public:
-     long long getcost(vector<int>&heights,vector<int>&cost,int mid)
-    {
-        long long totalcost=0;
-        for(int i=0;i<heights.size();i++)
-        {
-            totalcost+=abs(heights[i]-mid)*cost[i];
-        }
-        return totalcost;
-    }
+  int val(vector<int>& heights, vector<int>& cost,int mid){
+      int res=0;
+      for(int i=0;i<heights.size();i++){
+          res=res+abs(heights[i]-mid)*cost[i];
+      }
+      return res;
+  }
     int minCost(vector<int>& heights, vector<int>& cost) {
         // code here
-        int low=*min_element(heights.begin(),heights.end());
-        int high=*max_element(heights.begin(),heights.end());
-        while(low<high)
-        {
-            int mid=(low+high)/2;
-            long long cost1=getcost(heights,cost,mid);
-            long long cost2=getcost(heights,cost,mid+1);
+        int s=heights[0],e=heights[0];
+        for(int i=0;i<heights.size();i++){
+            s=min(heights[i],s);
+            e=max(heights[i],e);
+        }
+        while(s<e){
+            int mid=(s+e)/2;
             
-            if(cost1>cost2)
-            {
-                low=mid+1;
+            int c1=val(heights,cost,mid);
+            int c2=val(heights,cost,mid+1);
+            
+            if(c1>c2){
+                s=mid+1;
             }
             else
-            {
-                high=mid;
-            }
+            e=mid;
         }
-        return getcost(heights,cost,low);
+        return val(heights,cost,s);
     }
 };
