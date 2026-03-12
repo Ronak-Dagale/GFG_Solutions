@@ -2,7 +2,7 @@ class Solution {
   public:
     int kBitFlips(vector<int>& arr, int k) {
         // code here
-        int n=arr.size(),times=0,i=0,ans=0;
+          int n=arr.size(),times=0,i=0,ans=0;
         vector<bool>flip(n,0);
         
         for (int i = 0; i < n; i++) {
