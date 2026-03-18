@@ -17,7 +17,7 @@ class Solution {
   int solve(Node*r,int&ans){
       if(!r) return 0;
       
-      int la=solve(r->left,ans);
+      int la=solve(r->left,ans);        
       int ra=solve(r->right,ans);
       
       ans=ans+abs(la)+abs(ra);
